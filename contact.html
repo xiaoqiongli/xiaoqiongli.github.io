@@ -7,10 +7,11 @@
 <style>
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background: #fff;
-  color: #000;
-  margin: 0;
+  max-width: 900px;     /* 与 research.html 保持一致 */
+  margin: auto;
+  padding: 20px;
   line-height: 1.6;
+  color: #000;
 }
 /* 顶部小导航 */
 .primary_nav { background: #f9f7fb; border-bottom: 1px solid #e0d7f5; padding: 8px 20px; text-align: right; font-size: 0.9rem; }
@@ -22,35 +23,29 @@ body {
 .secondary_header ul li { display: inline-block; margin: 0 15px; }
 .secondary_header ul li a { color: #fff; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
 .secondary_header ul li a:hover { color: #d1c4e9; }
-/* 内容区域 */
-.container { max-width: 800px; margin: auto; padding: 20px; }
-h1 { text-align: center; color: #4b0082; margin-top: 30px; }
+/* 内容 */
+h1 { color: #4b0082; margin-top: 30px; }
 h2 { color: #4b0082; margin-top: 30px; }
-.contact-info { text-align: center; margin-bottom: 30px; }
 .contact-info p { margin: 5px 0; }
-.social-links { text-align: center; margin: 20px 0; }
-.social-links a { margin: 0 10px; color: #4b0082; text-decoration: none; font-weight: bold; }
+.social-links a { margin-right: 15px; color: #4b0082; text-decoration: none; font-weight: bold; }
 .social-links a:hover { text-decoration: underline; }
-/* 地图区域 */
-.map-container { text-align: center; margin: 30px 0; }
+/* 地图 */
+.map-container { margin: 20px 0; }
 .map-container img { max-width: 100%; height: auto; border-radius: 8px; }
-/* 表单 */
-form { max-width: 600px; margin: auto; }
-form label { display: block; margin: 10px 0 5px; }
-form input, form textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 15px; font-size: 1rem; }
-form button { background: #4b0082; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 6px; cursor: pointer; }
-form button:hover { background: #360061; }
 /* Footer */
 footer { margin-top: 40px; text-align: center; font-size: 0.85rem; color: #666; }
 </style>
 </head>
 <body>
 
+<!-- 顶部小导航 -->
 <div class="primary_nav">
   <a href="mailto:qiong.li@manchester.ac.uk">Email</a>
   <a href="https://orcid.org/0000-0002-3119-9003">ORCID</a>
   <a href="https://ui.adsabs.harvard.edu/public-libraries/NCTRZj8RRAWSm9Hn-LghUg">NASA/ADS</a>
 </div>
+
+<!-- 紫色导航 -->
 <nav class="secondary_header">
   <ul>
     <li><a href="index.html">HOME</a></li>
@@ -60,38 +55,37 @@ footer { margin-top: 40px; text-align: center; font-size: 0.85rem; color: #666; 
   </ul>
 </nav>
 
-<div class="container">
-  <h1>Contact & Collaborations</h1>
-  <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:qiong.li@manchester.ac.uk">qiong.li@manchester.ac.uk</a></p>
-    <p><strong>Affiliation:</strong> University of Manchester, UK</p>
-  </div>
-  <div class="social-links">
-    <a href="https://orcid.org/0000-0002-3119-9003" target="_blank">ORCID</a>
-    <a href="https://ui.adsabs.harvard.edu/public-libraries/NCTRZj8RRAWSm9Hn-LghUg" target="_blank">NASA/ADS</a>
-    <a href="https://github.com/your-username" target="_blank">GitHub</a>
-    <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-  </div>
+<h1>Contact & Collaborations</h1>
 
-  <h2>Research Visits & Collaborators</h2>
-  <div class="map-container">
-    <img src="images/world_map_collab.png" alt="Map of visited institutions and collaborators">
-  </div>
-  <p style="text-align:center; font-size:0.9rem; color:#555;">
-    The map above marks research institutions I've visited and collaborators I work closely with. Each marker can be linked or annotated—feel free to replace this placeholder with your custom map.
-  </p>
-
-  <h2>Send me a message</h2>
-  <p style="text-align:center; margin-top:20px;">
-    <a href="mailto:qiong.li@manchester.ac.uk?subject=Contact%20from%20Academic%20Website&body=Hello%20Qiong,%0D%0A%0D%0AI%20found%20your%20website%20and%20would%20like%20to%20get%20in%20touch.%0D%0A%0D%0A[Please%20write%20your%20message%20here...]"
-       style="background:#4b0082; color:#fff; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:1rem;">
-       ✉️ Send Email
-    </a>
-  </p>
-
-
+<div class="contact-info">
+  <p><strong>Email:</strong> <a href="mailto:qiong.li@manchester.ac.uk">qiong.li@manchester.ac.uk</a></p>
+  <p><strong>Affiliation:</strong> University of Manchester, UK</p>
 </div>
+
+<div class="social-links">
+  <a href="https://orcid.org/0000-0002-3119-9003" target="_blank">ORCID</a>
+  <a href="https://ui.adsabs.harvard.edu/public-libraries/NCTRZj8RRAWSm9Hn-LghUg" target="_blank">NASA/ADS</a>
+  <a href="https://github.com/your-username" target="_blank">GitHub</a>
+  <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+</div>
+
+<h2>Research Visits & Collaborators</h2>
+<div class="map-container">
+  <img src="images/world_map_collab.png" alt="Map of visited institutions and collaborators">
+</div>
+<p>
+  The map above marks research institutions I've visited and collaborators I work closely with.  
+  Each marker can be linked or annotated—feel free to replace this placeholder with your custom map.
+</p>
+
+<h2>Send me a message</h2>
+<p>
+  <a href="mailto:qiong.li@manchester.ac.uk?subject=Contact%20from%20Academic%20Website&body=Hello%20Qiong,%0D%0A%0D%0AI%20found%20your%20website%20and%20would%20like%20to%20get%20in%20touch.%0D%0A%0D%0A[Please%20write%20your%20message%20here...]"
+     style="background:#4b0082; color:#fff; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; font-size:1rem;">
+     ✉️ Send Email
+  </a>
+</p>
 
 <footer>
   <p>&copy; 2025 Qiong Li | Academic Website</p>
