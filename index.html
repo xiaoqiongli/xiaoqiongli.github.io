@@ -106,8 +106,9 @@ header p {
   text-align: center;
 }
 .card img {
-  width: 100%;
-  max-width: 280px;
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s;
@@ -119,6 +120,12 @@ header p {
   margin-top: 10px;
   font-size: 1.2rem;
   color: #4b0082;
+}
+.card p {
+  font-size: 0.9rem;
+  color: #333;
+  max-width: 260px;
+  margin: 8px auto 0;
 }
 footer {
   background: #f5f5f5;
@@ -135,8 +142,8 @@ footer {
 <!-- 顶部小导航 -->
 <div class="primary_nav">
   <a href="mailto:qiong.li@manchester.ac.uk">Email</a>
-  <a href="https://scholar.google.com">Google Scholar</a>
-  <a href="https://github.com/">GitHub</a>
+  <a href="https://orcid.org/0000-0002-3119-9003">ORCID</a>
+  <a href="https://ui.adsabs.harvard.edu/public-libraries/NCTRZj8RRAWSm9Hn-LghUg">NASA/ADS</a>
 </div>
 
 <!-- 紫色主题导航 -->
@@ -169,23 +176,35 @@ footer {
         <li>Quasar activity and galaxy mergers during the Epoch of Reionization</li>
         <li>Multi-phase circumgalactic medium of Lyα nebulae in overdense fields</li>
       </ul>
-      <p>
-      </p>
     </div>
   </div>
 
   <div class="research-cards">
     <div class="card">
-      <a href="research.html#protoclusters"><img src="images/coma.jpg" alt="Protoclusters"></a>
+      <a href="research.html#protoclusters">
+        <img src="images/coma.jpg" alt="Protoclusters">
+      </a>
       <h4>Protoclusters</h4>
+      <p>Discovering and characterizing galaxy protoclusters at z = 5–10 using JWST, JCMT, and ALMA. 
+      Exploring their role in early large-scale structure formation and cosmic reionization.</p>
     </div>
+
     <div class="card">
-      <a href="research.html#quasars"><img src="images/quasar.jpg" alt="Quasars"></a>
+      <a href="research.html#quasars">
+        <img src="images/quasar.jpg" alt="Quasars">
+      </a>
       <h4>Quasars</h4>
+      <p>Studying quasar activity, mergers, and feedback processes during the Epoch of Reionization 
+      with multi-wavelength surveys such as JCMT, JWST, and VLA.</p>
     </div>
+
     <div class="card">
-      <a href="research.html#nebulae"><img src="images/nebula.png" alt="Lyα Nebulae"></a>
+      <a href="research.html#nebulae">
+        <img src="images/nebula.png" alt="Lyα Nebulae">
+      </a>
       <h4>Lyα Nebulae</h4>
+      <p>Exploring the circumgalactic medium and giant Lyα nebulae in overdense fields at z = 2–6 
+      using IFU spectroscopy (Keck/KCWI, Palomar/CWI) and ALMA/NOEMA observations.</p>
     </div>
   </div>
 </div>
