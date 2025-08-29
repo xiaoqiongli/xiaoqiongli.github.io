@@ -6,176 +6,134 @@
 <title>Qiong Li | Astrophysicist</title>
 <style>
 body {
-  background-color: #faf9fc;  /* 更柔和的浅紫背景 */
-  font-family: "Helvetica Neue", Georgia, serif;
-  color: #000;  /* 全部黑色字体 */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000;
   margin: 0;
   line-height: 1.6;
 }
-
-/* 顶部横幅 */
-.primary_header {
-  background: linear-gradient(135deg, #4b0082, #7b2cbf); /* 高级紫色渐变 */
-  padding: 40px 20px;  /* 扁一点 */
-  text-align: center;
-  color: #fff;
-  max-width: 1100px; /* 收窄与下方对齐 */
+header {
+  max-width: 1100px;
   margin: auto;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
-.primary_header h1 {
+header h1 {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
 }
-.primary_header p {
+header p {
   margin: 5px 0 0;
   font-size: 1.1rem;
-  color: #e5d8f5; /* 浅紫点缀 */
+  color: #555;
 }
-
-/* 导航栏 */
-.secondary_header {
-  background-color: #4b0082;
-  text-align: center;
-  padding: 0.5rem;
-}
-.secondary_header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.secondary_header ul li {
-  display: inline-block;
-  margin: 0 15px;
-}
-.secondary_header ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.95rem;
-}
-.secondary_header ul li a:hover {
-  color: #d1c4e9;
-}
-
-/* 主体 */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
-.left_article {
-  width: 65%;
-  float: left;
-  padding: 20px;
+/* About me */
+.about {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
 }
-.right_article {
-  width: 30%;
-  float: right;
+.about img {
+  width: 180px;
+  border-radius: 10px;
+  border: 2px solid #eee;
+}
+.about-details {
+  flex: 1;
+}
+.about-details h3 {
+  margin-top: 0;
+}
+/* Research interests on homepage */
+.research-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.card {
+  flex: 1;
+  margin: 0 10px;
   text-align: center;
-  padding: 20px;
 }
-.right_article img {
-  border-radius: 50%;
-  border: 3px solid #6a1b9a;
-  width: 200px;
-}
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* 子标题 */
-h3, h4 {
-  color: #6a1b9a; /* 高级紫色 */
-  font-weight: 600;
-}
-
-/* 研究兴趣卡片 */
-.columns {
-  text-align: center;
-  padding: 20px;
-}
-.columns img {
+.card img {
+  width: 100%;
+  max-width: 280px;
   border-radius: 8px;
-  width: 220px;
-  height: auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
 }
-.columns h4 {
+.card img:hover {
+  transform: scale(1.05);
+}
+.card h4 {
   margin-top: 10px;
   font-size: 1.2rem;
+  color: #4b0082;
 }
-.columns p {
-  font-size: 0.95rem;
-  max-width: 280px;
-  margin: auto;
-  color: #000; /* 黑色正文 */
-}
-
-/* 页脚 */
 footer {
-  background-color: #4b0082;
-  color: #fff;
+  background: #f5f5f5;
   text-align: center;
-  padding: 12px;
+  padding: 15px;
   margin-top: 30px;
   font-size: 0.85rem;
+  color: #666;
 }
 </style>
 </head>
-
 <body>
-  <div class="primary_header">
-    <h1>Welcome to Qiong Li’s Homepage</h1>
-    <p>Postdoctoral Researcher · Extragalactic Astronomy · University of Manchester</p>
-  </div>
 
-  <nav class="secondary_header" id="menu">
-    <ul>
-      <li class="current"><a href="index.html">HOME</a></li>
-      <li><a href="research.html">RESEARCH</a></li>
-      <li><a href="cv.pdf">CV</a></li>
-      <li><a href="publications.pdf">PUBLICATIONS</a></li>
-      <li><a href="gallery.html">GALLERY</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-  </nav>
+<header>
+  <h1>Qiong Li</h1>
+  <p>Postdoctoral Researcher · Extragalactic Astronomy · University of Manchester</p>
+</header>
 
-  <div class="container">
-    <article class="left_article">
-      <h3>About Me</h3>
+<div class="container">
+  <div class="about">
+    <img src="images/profile.jpg" alt="Qiong Li">
+    <div class="about-details">
+      <h3>About me</h3>
       <p>I am <strong>Qiong Li (李琼)</strong>, a postdoctoral researcher in observational extragalactic astronomy at the University of Manchester. 
       My research focuses on galaxy protoclusters, quasars, and large-scale structures in the early Universe using multi-wavelength facilities 
-      such as JWST, ALMA, VLA, JCMT, and Keck. I am broadly interested in the processes driving galaxy formation and evolution in the first billion years.</p>
-    </article>
-
-    <aside class="right_article">
-      <img src="images/profile.jpg" alt="Qiong Li">
-    </aside>
+      such as JWST, ALMA, VLA, JCMT, and Keck.</p>
+      <p>Research interests include:</p>
+      <ul>
+        <li>Formation and evolution of protoclusters at high redshift</li>
+        <li>Quasar activity and galaxy mergers during the Epoch of Reionization</li>
+        <li>Multi-phase circumgalactic medium of Lyα nebulae in overdense fields</li>
+      </ul>
+      <p>
+        <a href="cv.pdf">CV</a> / 
+        <a href="publications.pdf">Publications</a> / 
+        <a href="research.html">Research</a>
+      </p>
+    </div>
   </div>
 
-  <div class="container">
-    <div class="columns">
-      <img src="images/coma.jpg" alt="Protoclusters">
+  <div class="research-cards">
+    <div class="card">
+      <a href="research.html#protoclusters"><img src="images/coma.jpg" alt="Protoclusters"></a>
       <h4>Protoclusters</h4>
-      <p>Discovering and characterizing galaxy protoclusters at z = 5–10 with JWST, JCMT, and ALMA.</p>
     </div>
-    <div class="columns">
-      <img src="images/quasar.jpg" alt="Quasars">
+    <div class="card">
+      <a href="research.html#quasars"><img src="images/quasar.jpg" alt="Quasars"></a>
       <h4>Quasars</h4>
-      <p>Studying quasar activity, mergers, and feedback during the Epoch of Reionization.</p>
     </div>
-    <div class="columns">
-      <img src="images/nebula.png" alt="Nebulae">
+    <div class="card">
+      <a href="research.html#nebulae"><img src="images/nebula.png" alt="Lyα Nebulae"></a>
       <h4>Lyα Nebulae</h4>
-      <p>Exploring the circumgalactic medium and enormous Lyα nebulae with IFU observations.</p>
     </div>
   </div>
+</div>
 
-  <footer>
-    <p>&copy; 2025 Qiong Li | Academic Website</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Qiong Li | Academic Website</p>
+</footer>
 </body>
 </html>
