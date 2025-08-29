@@ -2,106 +2,201 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Light Theme</title>
-<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+<title>Gallery | Qiong Li</title>
+<style>
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 顶部小导航 */
+.primary_nav {
+  background: #f9f7fb;
+  border-bottom: 1px solid #e0d7f5;
+  padding: 8px 20px;
+  text-align: right;
+  font-size: 0.9rem;
+}
+.primary_nav a {
+  margin-left: 15px;
+  color: #4b0082;
+  text-decoration: none;
+}
+.primary_nav a:hover {
+  text-decoration: underline;
+}
+
+/* 紫色主题导航 */
+.secondary_header {
+  background-color: #4b0082;
+  text-align: center;
+  padding: 0.6rem;
+}
+.secondary_header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.secondary_header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.secondary_header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+.secondary_header ul li a:hover {
+  color: #d1c4e9;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Section headers */
+h1, h2 {
+  text-align: center;
+  color: #4b0082;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Gallery grid */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.thumbnail {
+  width: 260px;
+  text-align: center;
+}
+.thumbnail img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+.thumbnail img:hover {
+  transform: scale(1.05);
+}
+.thumbnail h4 {
+  margin: 8px 0 4px;
+  font-size: 1rem;
+  color: #4b0082;
+}
+.thumbnail p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+}
+</style>
 </head>
 <body>
-<!-- Main Container -->
-<div class="container"> 
-  <!-- Header -->
-  <header class="header">
-    <h4 class="logo">GALLERY</h4>
-  </header>
-  <!-- Hero Section -->
-  <section class="intro">
-    <div class="column">
-      <h3>Qiong Li at Kitt peak</h3>
-      <img src="images/1706_bok/IMG_3857_2.jpg" alt="" class="profile"> </div>
-    <div class="column">
-      <p>During my little free time, I love photography, especially for sky, star and our universe. I also like traditional Chinese painting.</p>
-      <p>Here are some of my photos and paintings.</p>
-    </div>
-  </section>
-  <!-- Stats Gallery Section -->
-  <h2 class="text-center">PHOTOS</h2>
-  <div class="gallery">
-	<div class="thumbnail"> <a href="#"><img src="images/1706_bok/IMG_3401_2.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>Storm is coming</h4>
-      <p class="tag">2017.06, Kitt peak</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1706_bok/IMG_3833_3.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>Guider</h4>
-      <p class="tag">2017.06, Kitt peak</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1706_bok/IMG_3509_1.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>Milky Way</h4>
-      <p class="tag">2017.06, Kitt peak</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1706_bok/IMG_3953_1.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>the dawn</h4>
-      <p class="tag">2017.06, Kitt peak</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1801_hawaii/IMG_4376_1.png" alt="" width="2000" class="cards"/></a>
-      <h4>Orion and me</h4>
-      <p class="tag">2018.01, Mauna Kea</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1808_palomar/IMG_4945_3.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>galaxy</h4>
-      <p class="tag">2018.08, Palomar</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1808_palomar/IMG_4970_3.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>TITLE</h4>
-      <p class="tag">2018.08, Palomar</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1709_hawaii/IMG_4049.JPG" alt="" width="2000" class="cards"/></a>
-      <h4>TITLE</h4>
-      <p class="tag">2017.09, Mauna Kea</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1808_palomar/IMG_4994_3副本.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>TITLE</h4>
-      <p class="tag">2018.08, Palomar</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1808_palomar/IMG_5018_3.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>TITLE</h4>
-      <p class="tag">2018.08, Palomar</p>
-    </div>
-    <div class="thumbnail"> <a href="#"><img src="images/1802_moon.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>TITLE</h4>
-      <p class="tag">2018.02, Santa Cruz</p>
-    </div>
-	<div class="thumbnail"> <a href="#"><img src="images/1709_hawaii/IMG_4067_3.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>Another peak</h4>
-      <p class="tag">2017.09, Mauna Kea</p>
-    </div>
-	<div class="thumbnail"> <a href="#"><img src="images/1801_bridge.jpg" alt="" width="1000" height="200" class="cards_wlong"/></a>
-      <h4>Bridge</h4>
-      <p class="tag">2018.01, Mauna Kea</p>
-    </div>
-  </div>
-<h2 class="text-center">PAINTING</h2>
-  <div class="gallery">
-	<div class="thumbnail"> <a href="#"><img src="images/painting/WechatIMG34.jpeg" alt="" width="5000" height="400" class="cards_long"/></a>
-      <h4>TITLE</h4>
-      <p class="tag">2019.04</p>
-    </div>
-	<div class="thumbnail"> <a href="#"><img src="images/painting/WechatIMG35.jpeg" alt="" width="1000" class="cards_long"/></a>
-      <h4>TITLE</h4>
-      <p class="tag">2019.05</p>
-    </div>
-	<div class="thumbnail"> <a href="#"><img src="images/painting/WechatIMG36.jpeg" alt="" width="1000" class="cards"/></a>
-      <h4>TITLE</h4>
-      <p class="tag">2019.05</p>
-    </div>
-  </div>
-  <!-- Footer Section -->
-  <footer id="contact">
 
-  </footer>
-  <!-- Copyrights Section -->
-  <div class="copyright">&copy;2015 - <strong>GRID</strong></div>
+<!-- 顶部小导航 -->
+<div class="primary_nav">
+  <a href="mailto:qiong.li@manchester.ac.uk">Email</a>
+  <a href="https://orcid.org/0000-0002-3119-9003">ORCID</a>
+  <a href="https://ui.adsabs.harvard.edu/public-libraries/NCTRZj8RRAWSm9Hn-LghUg">NASA/ADS</a>
 </div>
-<!-- Main Container Ends -->
+
+<!-- 紫色主题导航 -->
+<nav class="secondary_header" id="menu">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="research.html">RESEARCH</a></li>
+    <li><a href="publications.html">PUBLICATIONS</a></li>
+    <li class="current"><a href="gallery.html">GALLERY</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Gallery</h1>
+  <p style="text-align:center">During my free time, I love photography — especially skies, stars, and the Universe — and I also enjoy traditional Chinese painting. Here are some of my works.</p>
+
+  <h2>Photos</h2>
+  <div class="gallery">
+    <div class="thumbnail">
+      <img src="images/1706_bok/IMG_3401_2.jpg" alt="Storm is coming" loading="lazy">
+      <h4>Storm is coming</h4>
+      <p>2017.06, Kitt Peak</p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/1706_bok/IMG_3833_3.jpg" alt="Guider" loading="lazy">
+      <h4>Guider</h4>
+      <p>2017.06, Kitt Peak</p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/1706_bok/IMG_3509_1.jpg" alt="Milky Way" loading="lazy">
+      <h4>Milky Way</h4>
+      <p>2017.06, Kitt Peak</p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/1801_hawaii/IMG_4376_1.png" alt="Orion and me" loading="lazy">
+      <h4>Orion and me</h4>
+      <p>2018.01, Mauna Kea</p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/1808_palomar/IMG_4945_3.jpg" alt="Galaxy" loading="lazy">
+      <h4>Galaxy</h4>
+      <p>2018.08, Palomar</p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/1709_hawaii/IMG_4049.JPG" alt="Mauna Kea peak" loading="lazy">
+      <h4>Another Peak</h4>
+      <p>2017.09, Mauna Kea</p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/1802_moon.jpg" alt="Moon" loading="lazy">
+      <h4>Moonrise</h4>
+      <p>2018.02, Santa Cruz</p>
+    </div>
+  </div>
+
+  <h2>Painting</h2>
+  <div class="gallery">
+    <div class="thumbnail">
+      <img src="images/painting/WechatIMG34.jpeg" alt="Painting 1" loading="lazy">
+      <h4>Ink Landscape</h4>
+      <p>2019.04</p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/painting/WechatIMG35.jpeg" alt="Painting 2" loading="lazy">
+      <h4>Mountain & River</h4>
+      <p>2019.05</p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/painting/WechatIMG36.jpeg" alt="Painting 3" loading="lazy">
+      <h4>Stars & Night</h4>
+      <p>2019.05</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Qiong Li | Academic Website</p>
+</footer>
+
 </body>
 </html>
