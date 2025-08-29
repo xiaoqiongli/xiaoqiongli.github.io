@@ -7,16 +7,19 @@
 <style>
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #ffffff;
-  color: #000;
-  margin: 0;
+  max-width: 900px;   /* 与 research.html 一致 */
+  margin: auto;
+  padding: 20px;
   line-height: 1.6;
+  color: #000;
 }
 
 /* 顶部小导航 */
 .primary_nav {
   background: #f9f7fb;
   border-bottom: 1px solid #e0d7f5;
+  padding: 8px 20px;
+  text-align: right;
   font-size: 0.9rem;
 }
 .primary_nav a {
@@ -31,12 +34,13 @@ body {
 /* 紫色主题导航 */
 .secondary_header {
   background-color: #4b0082;
+  text-align: center;
+  padding: 0.6rem;
 }
 .secondary_header ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 .secondary_header ul li {
   display: inline-block;
@@ -52,25 +56,10 @@ body {
   color: #d1c4e9;
 }
 
-/* 导航容器，限制宽度 */
-.nav-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: flex-end; /* 顶部小导航靠右 */
-  align-items: center;
-}
-.secondary_header .nav-container {
-  justify-content: center; /* 二级导航居中 */
-}
-
 /* Header 主体 */
 header {
-  max-width: 1100px;
-  margin: auto;
-  padding: 30px 20px;
   text-align: center;
+  margin: 30px 0;
 }
 header h1 {
   margin: 0;
@@ -83,21 +72,15 @@ header p {
   color: #555;
 }
 
-/* 主体内容容器 */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-}
-
 /* About me */
 .about {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: flex-start;
+  margin-top: 30px;
 }
 .about img {
-  width: 180px;
+  width: 160px;
   border-radius: 10px;
   border: 2px solid #eee;
 }
@@ -106,6 +89,7 @@ header p {
 }
 .about-details h3 {
   margin-top: 0;
+  color: #4b0082;
 }
 
 /* 研究兴趣卡片 */
@@ -113,14 +97,15 @@ header p {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  gap: 10px;
 }
 .card {
   flex: 1;
-  margin: 0 10px;
   text-align: center;
 }
 .card img {
-  width: 200px;
+  width: 100%;
+  max-width: 220px;
   height: 140px;
   object-fit: cover;
   border-radius: 8px;
@@ -132,22 +117,19 @@ header p {
 }
 .card h4 {
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #4b0082;
 }
 .card p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #333;
-  max-width: 260px;
-  margin: 8px auto 0;
+  margin: 6px auto 0;
 }
 
 /* Footer */
 footer {
-  background: #f5f5f5;
+  margin-top: 40px;
   text-align: center;
-  padding: 15px;
-  margin-top: 30px;
   font-size: 0.85rem;
   color: #666;
 }
@@ -157,23 +139,19 @@ footer {
 
 <!-- 顶部小导航 -->
 <div class="primary_nav">
-  <div class="nav-container">
-    <a href="mailto:qiong.li@manchester.ac.uk">Email</a>
-    <a href="https://orcid.org/0000-0002-3119-9003">ORCID</a>
-    <a href="https://ui.adsabs.harvard.edu/public-libraries/NCTRZj8RRAWSm9Hn-LghUg">NASA/ADS</a>
-  </div>
+  <a href="mailto:qiong.li@manchester.ac.uk">Email</a>
+  <a href="https://orcid.org/0000-0002-3119-9003">ORCID</a>
+  <a href="https://ui.adsabs.harvard.edu/public-libraries/NCTRZj8RRAWSm9Hn-LghUg">NASA/ADS</a>
 </div>
 
 <!-- 紫色主题导航 -->
 <nav class="secondary_header" id="menu">
-  <div class="nav-container">
-    <ul>
-      <li class="current"><a href="index.html">HOME</a></li>
-      <li><a href="research.html">RESEARCH</a></li>
-      <li><a href="publications.html">CV+PUBLICATIONS</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-  </div>
+  <ul>
+    <li class="current"><a href="index.html">HOME</a></li>
+    <li><a href="research.html">RESEARCH</a></li>
+    <li><a href="publications.html">CV+PUBLICATIONS</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
 </nav>
 
 <header>
@@ -181,50 +159,48 @@ footer {
   <p>Postdoctoral Researcher · Extragalactic Astronomy · University of Manchester</p>
 </header>
 
-<div class="container">
-  <div class="about">
-    <img src="images/profile.jpg" alt="Qiong Li">
-    <div class="about-details">
-      <h3>About me</h3>
-      <p>I am <strong>Qiong Li (李琼)</strong>, a postdoctoral researcher in observational extragalactic astronomy at the University of Manchester. 
-      My research focuses on galaxy protoclusters, quasars, and large-scale structures in the early Universe using multi-wavelength facilities 
-      such as JWST, ALMA, VLA, JCMT, and Keck.</p>
-      <p>Research interests include:</p>
-      <ul>
-        <li>Formation and evolution of protoclusters at high redshift</li>
-        <li>Quasar activity and galaxy mergers during the Epoch of Reionization</li>
-        <li>Multi-phase circumgalactic medium of Lyα nebulae in overdense fields</li>
-      </ul>
-    </div>
+<div class="about">
+  <img src="images/profile.jpg" alt="Qiong Li">
+  <div class="about-details">
+    <h3>About me</h3>
+    <p>I am <strong>Qiong Li (李琼)</strong>, a postdoctoral researcher in observational extragalactic astronomy at the University of Manchester. 
+    My research focuses on galaxy protoclusters, quasars, and large-scale structures in the early Universe using multi-wavelength facilities 
+    such as JWST, ALMA, VLA, JCMT, and Keck.</p>
+    <p>Research interests include:</p>
+    <ul>
+      <li>Formation and evolution of protoclusters at high redshift</li>
+      <li>Quasar activity and galaxy mergers during the Epoch of Reionization</li>
+      <li>Multi-phase circumgalactic medium of Lyα nebulae in overdense fields</li>
+    </ul>
+  </div>
+</div>
+
+<div class="research-cards">
+  <div class="card">
+    <a href="research.html#protoclusters">
+      <img src="images/coma.jpg" alt="Protoclusters">
+    </a>
+    <h4>Protoclusters</h4>
+    <p>Discovering and characterizing galaxy protoclusters at z = 5–10 using JWST, JCMT, and ALMA. 
+    Exploring their role in early large-scale structure formation and cosmic reionization.</p>
   </div>
 
-  <div class="research-cards">
-    <div class="card">
-      <a href="research.html#protoclusters">
-        <img src="images/coma.jpg" alt="Protoclusters">
-      </a>
-      <h4>Protoclusters</h4>
-      <p>Discovering and characterizing galaxy protoclusters at z = 5–10 using JWST, JCMT, and ALMA. 
-      Exploring their role in early large-scale structure formation and cosmic reionization.</p>
-    </div>
+  <div class="card">
+    <a href="research.html#quasars">
+      <img src="images/quasar.jpg" alt="Quasars">
+    </a>
+    <h4>Quasars</h4>
+    <p>Studying quasar activity, mergers, and feedback processes during the Epoch of Reionization 
+    with multi-wavelength surveys such as JCMT, JWST, and VLA.</p>
+  </div>
 
-    <div class="card">
-      <a href="research.html#quasars">
-        <img src="images/quasar.jpg" alt="Quasars">
-      </a>
-      <h4>Quasars</h4>
-      <p>Studying quasar activity, mergers, and feedback processes during the Epoch of Reionization 
-      with multi-wavelength surveys such as JCMT, JWST, and VLA.</p>
-    </div>
-
-    <div class="card">
-      <a href="research.html#nebulae">
-        <img src="images/nebula.png" alt="Lyα Nebulae">
-      </a>
-      <h4>Lyα Nebulae</h4>
-      <p>Exploring the circumgalactic medium and giant Lyα nebulae in overdense fields at z = 2–6 
-      using IFU spectroscopy (Keck/KCWI, Palomar/CWI) and ALMA/NOEMA observations.</p>
-    </div>
+  <div class="card">
+    <a href="research.html#nebulae">
+      <img src="images/nebula.png" alt="Lyα Nebulae">
+    </a>
+    <h4>Lyα Nebulae</h4>
+    <p>Exploring the circumgalactic medium and giant Lyα nebulae in overdense fields at z = 2–6 
+    using IFU spectroscopy (Keck/KCWI, Palomar/CWI) and ALMA/NOEMA observations.</p>
   </div>
 </div>
 
