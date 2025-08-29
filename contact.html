@@ -7,7 +7,7 @@
 <style>
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  max-width: 900px;     /* 与 research.html 保持一致 */
+  max-width: 900px;
   margin: auto;
   padding: 20px;
   line-height: 1.6;
@@ -29,9 +29,22 @@ h2 { color: #4b0082; margin-top: 30px; }
 .contact-info p { margin: 5px 0; }
 .social-links a { margin-right: 15px; color: #4b0082; text-decoration: none; font-weight: bold; }
 .social-links a:hover { text-decoration: underline; }
-/* 地图 */
-.map-container { margin: 20px 0; }
-.map-container img { max-width: 100%; height: auto; border-radius: 8px; }
+/* 合作者列表 */
+.collab-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 30px;
+  margin-top: 20px;
+}
+.collab-grid div {
+  background: #f9f7fb;
+  border-left: 4px solid #4b0082;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.collab-grid strong {
+  color: #4b0082;
+}
 /* Footer */
 footer { margin-top: 40px; text-align: center; font-size: 0.85rem; color: #666; }
 </style>
@@ -71,13 +84,59 @@ footer { margin-top: 40px; text-align: center; font-size: 0.85rem; color: #666; 
 </div>
 
 <h2>Research Visits & Collaborators</h2>
-<div class="map-container">
-  <img src="images/world_map_collab.png" alt="Map of visited institutions and collaborators">
-</div>
 <p>
-  The map above marks research institutions I've visited and collaborators I work closely with.  
-  Each marker can be linked or annotated—feel free to replace this placeholder with your custom map.
+Below is a selection of my closest collaborators worldwide (frequent co-authors, project leaders, and major institutions):
 </p>
+
+<div class="collab-grid">
+
+  <!-- UK -->
+  <div><strong>Christopher J. Conselice</strong><br>University of Manchester, UK<br><em>Galaxy formation, JWST, EPOCHS PI</em></div>
+  <div><strong>Nathan J. Adams</strong><br>University of Manchester, UK<br><em>JWST/EPOCHS collaborator</em></div>
+
+  <div><strong>Tom Harvey</strong><br>University of Manchester, UK<br><em>JWST/EPOCHS collaborator</em></div>
+  <div><strong>George Bendo</strong><br>University of Manchester, UK<br><em>Sub-mm surveys, protoclusters</em></div>
+
+  <div><strong>Qiao Duan</strong><br>University of Manchester, UK<br><em>Supervised MSc student; galaxy mergers</em></div>
+
+  <!-- China -->
+  <div><strong>Ran Wang</strong><br>Peking University (KIAA), China<br><em>High-z quasars & protoclusters</em></div>
+  <div><strong>Linhua Jiang</strong><br>Peking University (KIAA), China<br><em>High-z quasars, SHERRY survey</em></div>
+
+  <div><strong>Xue-Bing Wu</strong><br>Peking University, China<br><em>High-z quasars</em></div>
+  <div><strong>Yali Shao</strong><br>Peking University, China<br><em>SHERRY survey collaborator</em></div>
+
+  <div><strong>Jianan Li</strong><br>Peking University, China<br><em>SHERRY survey collaborator</em></div>
+  <div><strong>Zheng Cai</strong><br>Tsinghua University, China<br><em>CGM, ELAN, dual AGN</em></div>
+
+  <div><strong>Shiwu Zhang</strong><br>Tsinghua University, China<br><em>Dual AGN & nebulae</em></div>
+  <div><strong>Yuanhang Ning</strong><br>Tsinghua University, China<br><em>Dual AGN collaborator</em></div>
+
+  <!-- USA -->
+  <div><strong>Ákos (András) Bogdán</strong><br>Harvard-Smithsonian CfA, USA<br><em>X-ray protoclusters</em></div>
+  <div><strong>Gerrit Schellenberger</strong><br>Harvard-Smithsonian CfA, USA<br><em>X-ray protoclusters</em></div>
+
+  <div><strong>Xiaohui Fan</strong><br>University of Arizona, USA<br><em>High-z quasars, SHERRY</em></div>
+  <div><strong>Sean Johnson</strong><br>University of Michigan, USA<br><em>CGM, SHERRY survey</em></div>
+
+  <div><strong>J. Xavier Prochaska</strong><br>UC Santa Cruz, USA<br><em>CGM, ELAN, absorption lines</em></div>
+  <div><strong>Bjorn Emonts</strong><br>NRAO, USA<br><em>VLA observations, MAMMOTH-I</em></div>
+
+  <!-- Europe -->
+  <div><strong>Fabrizio Arrigoni Battaia</strong><br>Max Planck Institute for Astrophysics, Germany<br><em>Lyα nebulae & CGM</em></div>
+  <div><strong>Eduardo Bañados</strong><br>Max Planck Institute for Astronomy, Germany<br><em>High-z quasars</em></div>
+
+  <div><strong>Bram Venemans</strong><br>Max Planck Institute for Astronomy, Germany<br><em>High-z quasars</em></div>
+  <div><strong>Roberto Neri</strong><br>IRAM/NOEMA, France<br><em>Molecular gas in protoclusters</em></div>
+
+  <!-- Large Collabs -->
+  <div><strong>James A. A. Trussler</strong><br>Durham University, UK<br><em>EPOCHS collaboration</em></div>
+  <div><strong>Leonardo Ferreira</strong><br>University of Oxford, UK<br><em>EPOCHS collaboration</em></div>
+
+  <div><strong>Dan Coe</strong><br>Space Telescope Science Institute, USA<br><em>JWST PEARLS PI</em></div>
+  <div><strong>Anton M. Koekemoer</strong><br>Space Telescope Science Institute, USA<br><em>JWST imaging lead</em></div>
+
+</div>
 
 <h2>Send me a message</h2>
 <p>
