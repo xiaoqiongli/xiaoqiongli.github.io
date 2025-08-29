@@ -13,28 +13,126 @@ body {
   line-height: 1.6;
   color: #000;
 }
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 h2 {
   color: #4b0082;
   margin-top: 40px;
 }
+h3 {
+  color: #4b0082;
+  margin-top: 20px;
+}
 a {
   color: #4b0082;
+}
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+}
+.primary_nav {
+  background: #f9f7fb;
+  border-bottom: 1px solid #e0d7f5;
+  padding: 8px 20px;
+  text-align: right;
+  font-size: 0.9rem;
+}
+.primary_nav a {
+  margin-left: 15px;
+  color: #4b0082;
+  text-decoration: none;
+}
+.primary_nav a:hover {
+  text-decoration: underline;
+}
+.secondary_header {
+  background-color: #4b0082;
+  text-align: center;
+  padding: 0.6rem;
+}
+.secondary_header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.secondary_header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.secondary_header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+.secondary_header ul li a:hover {
+  color: #d1c4e9;
 }
 </style>
 </head>
 <body>
+
+<!-- 顶部小导航 -->
+<div class="primary_nav">
+  <a href="mailto:qiong.li@manchester.ac.uk">Email</a>
+  <a href="https://orcid.org/0000-0002-3119-9003">ORCID</a>
+  <a href="https://ui.adsabs.harvard.edu/public-libraries/NCTRZj8RRAWSm9Hn-LghUg">NASA/ADS</a>
+</div>
+
+<!-- 紫色导航 -->
+<nav class="secondary_header" id="menu">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li class="current"><a href="research.html">RESEARCH</a></li>
+    <li><a href="publications.pdf">PUBLICATIONS</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+</nav>
+
 <h1>Research</h1>
-<p>My research focuses on the formation and evolution of galaxies, quasars, and large-scale structures in the early Universe, making use of multi-wavelength observations with JWST, ALMA, VLA, JCMT, and other facilities.</p>
+<p>My research focuses on the formation and evolution of galaxies, quasars, and large-scale structures in the early Universe, 
+using multi-wavelength observations with JWST, ALMA, VLA, JCMT, Keck, and other facilities. Below I summarize 
+my main research directions.</p>
 
-<h2 id="protoclusters">Protoclusters</h2>
-<p>I study galaxy protoclusters at high redshift (z = 5–10), exploring their role in early large-scale structure formation and cosmic reionization. Using JWST and ALMA, I investigate their galaxy populations, star-formation activity, and gas content.</p>
+<h2 id="protoclusters">Protoclusters and Large-Scale Structures</h2>
+<p>With JWST surveys (CEERS, JADES, PEARLS, COSMOS-Web, etc.), I discovered 26 overdensities at z = 5–7, 
+representing some of the earliest protocluster candidates identified in JWST data. These structures may evolve into 
+clusters with M<sub>halo</sub> > 10<sup>14</sup> M☉ by z = 0, challenging models of structure formation. 
+Our discovery of diffuse X-ray emission in a z ≈ 5.5 protocluster, submitted to <i>Nature</i>, suggests clusters began virializing 
+earlier than expected.</p>
+<p>I also lead sub-mm surveys with JCMT/SCUBA-2 and VLA to map massive overdense fields at z ≈ 2–3, 
+probing the co-evolution of LAEs, LBGs, SMGs, and AGN within large-scale structures. These studies reveal 
+how cosmic web nodes assembled during the first billion years.</p>
 
-<h2 id="quasars">Quasars</h2>
-<p>My work examines quasar activity, mergers, and feedback processes during the Epoch of Reionization. Through multi-wavelength surveys (JCMT, JWST, VLA), I investigate how quasars trace massive structures and influence their environments.</p>
+<h2 id="quasars">Quasars at Cosmic Dawn</h2>
+<p>As PI of the JCMT-SCUBA2 <strong>SHERRY survey</strong> (2016–2018), I built the first statistical sub-mm sample of 
+z ~ 6 quasars (54 objects, 151.5 hours). This survey revealed both their far-infrared properties and evidence of 
+dense protocluster environments. The SHERRY survey is recognized as a flagship achievement of UK sub-mm 
+astronomy.</p>
+<p>In addition, I investigate quasar merger rates and AGN activity at z = 4.5–11.5 using JWST, finding that mergers 
+contribute to at least half of galaxy mass growth in the first Gyr. My recent MNRAS work also uncovered 
+new AGN populations such as the “little red dots,” with ALMA follow-up underway.</p>
 
-<h2 id="nebulae">Lyα Nebulae</h2>
-<p>I explore the circumgalactic medium and giant Lyα nebulae in overdense fields at z = 2–6, using integral field spectroscopy (Keck/KCWI, Palomar/CWI) combined with ALMA and NOEMA observations. These studies reveal the interplay between gas accretion, star formation, and AGN feedback.</p>
+<h2 id="nebulae">Lyα Nebulae and the Circumgalactic Medium</h2>
+<p>I have led multiple IFU campaigns with Keck/KCWI and Palomar/CWI targeting Lyα nebulae near quasars, 
+quasar pairs, and WISE Type-II quasars at z ~ 2–3. These efforts discovered:</p>
+<ul>
+  <li>Lyα nebulae surrounding quasar pairs, often embedded in protocluster cores.</li>
+  <li>The first giant metal-line nebula (J1517) with extended C IV > 100 kpc.</li>
+  <li>A bright Lyα emitter within a lensed z = 2.8 SMG system, showing anisotropic quasar radiation.</li>
+  <li>A protocluster core linked to the enormous Lyα Nebula MAMMOTH-1, later published in <i>Science</i>.</li>
+</ul>
+<p>These studies demonstrate how AGN feedback, gas accretion, and metal enrichment shape the multi-phase 
+circumgalactic medium (CGM). Future work with JWST/NIRSpec and ALMA will map emission lines to constrain 
+CGM inflows, outflows, and star-forming gas reservoirs at z > 6.</p>
 
-<p><a href="index.html">← Back to Homepage</a></p>
+<footer>
+  <p>&copy; 2025 Qiong Li | Academic Website</p>
+</footer>
 </body>
 </html>
